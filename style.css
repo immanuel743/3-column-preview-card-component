@@ -1,0 +1,118 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    height: 120vh;
+}
+/* Root */
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --backgroundheadingsbuttons: hsl(0, 0%, 95%);
+
+}
+/* General */
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.icon{
+    margin-bottom: 1.2em;
+}
+.btn-wrap{
+    background-color: var(--backgroundheadingsbuttons);
+    display: inline-block;    
+    margin: 2em 1em;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+.btn-wrap a{
+    text-decoration: none;
+    color: var(--backgroundheadingsbuttons);
+    text-align: center; 
+}
+/* flex */
+.flex-wrap {
+    margin: 3em auto 0;
+    display: flex;
+    max-width: 100%;
+    width: 375px;
+    flex-direction: column;
+}
+/* item */
+.item{
+    padding: 1.5em 2em;
+    height: auto;
+    /* height: 360px; */
+}
+.item h1{
+    color: var(--backgroundheadingsbuttons);
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.item p{
+    color: var(--paragraphs);
+    font-size: 1em;
+    line-height: 1.6;
+
+}
+/* item1 */
+.item:nth-child(1){
+    background-color: var(--Brightorange);
+    border-radius: 10px 10px 0 0 ;
+}
+.item:nth-child(1) a{
+    color: var(--Brightorange);
+}
+/* item2 */
+.item:nth-child(2){
+    background-color:var(--Darkcyan) ;
+}
+.item:nth-child(2) a{
+    color:var(--Darkcyan) ;
+}
+/* item3 */
+.item:nth-child(3){
+    background-color:var(--Verydarkcyan) ;
+    border-radius: 0 0  10px 10px;
+}
+.item:nth-child(3) a{
+    color:var(--Verydarkcyan) ;
+}
+
+@media(min-width:765px){
+    body{
+        font-size: 18px;
+    }
+    .flex-wrap {
+        margin: 3em auto 0;
+        display: flex;
+        max-width: 80%;
+        width: 1200px;
+        flex-direction: row;
+    }
+    .item{
+        padding: 1.5em 1em;
+        height: auto;
+    }
+    .item:nth-child(1){
+        border-radius: 12px 0 0 12px ;
+    }
+    .item:nth-child(3){
+        border-radius: 0 12px  12px 0;
+    }
+    .item p{
+        color: var(--paragraphs);
+        font-size: 1em;
+        line-height: 1.4;
+    
+    }
+}
+
+
