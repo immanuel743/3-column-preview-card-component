@@ -31,18 +31,23 @@ h3 {
 .icon {
   margin-bottom: 1.2em;
 }
-.btn-wrap {
+.btn {
   background-color: var(--backgroundheadingsbuttons);
   display: inline-block;
   margin: 2em 1em;
   padding: 12px 20px;
   border-radius: 20px;
-}
-.btn-wrap a {
+  cursor: pointer;
   text-decoration: none;
-  color: var(--backgroundheadingsbuttons);
   text-align: center;
 }
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff !important;
+}
+
 /* flex */
 .flex-wrap {
   margin: 3em auto 0;
